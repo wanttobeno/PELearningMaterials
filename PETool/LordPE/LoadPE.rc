@@ -1,0 +1,296 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MAIN DIALOGEX 0, 0, 335, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PE Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDC_BTN_OK,279,13,48,11
+    PUSHBUTTON      "输出表",IDC_BTN_EXPORT,279,26,48,11
+    PUSHBUTTON      "区段",IDC_BTN_SECTION,279,39,48,11
+    PUSHBUTTON      "任务管理器",IDC_BTN_TASKMGR,279,52,48,11
+    PUSHBUTTON      "位置计算器",IDC_BTN_ADDRESS,279,65,48,11
+    PUSHBUTTON      "时间标志",IDC_BTN_DATETIME,279,78,48,11
+    PUSHBUTTON      "输入表",IDC_BTN_IAT,279,91,48,11
+    PUSHBUTTON      "关于作者",IDC_BTN_ABOUT,279,104,48,11
+    PUSHBUTTON      "Detail",IDC_BTN_SUBSYSTEM,244,12,22,12
+    PUSHBUTTON      "Detail",IDC_BTN_CHARACTER,244,65,22,12
+    EDITTEXT        IDC_EDIT_ENTRYPOINT,72,13,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUBSYSTEM,193,13,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IMAGEBASE,72,26,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECTIONNUM,193,26,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IMAGESIZE,72,39,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIMEDATE,193,39,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CODEBASE,72,52,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEADERSIZE,193,52,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATABASE,72,65,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHARACTER,193,65,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEMORYALIGN,72,78,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECKSUM,193,78,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILEALIGN,72,91,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OPTIONALSIZE,193,91,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAGIC,72,105,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RVASIZE,193,105,45,12,ES_AUTOHSCROLL
+    GROUPBOX        "基本PE头信息",IDC_STATIC,3,1,268,119
+    LTEXT           "入口点:",IDC_STATIC,9,15,59,8
+    LTEXT           "镜像基址:",IDC_STATIC,9,28,59,8
+    LTEXT           "镜像大小:",IDC_STATIC,9,41,59,8
+    LTEXT           "块对齐:",IDC_STATIC,9,80,59,8
+    LTEXT           "数据基址:",IDC_STATIC,9,67,59,8
+    LTEXT           "代码基址:",IDC_STATIC,9,54,59,8
+    LTEXT           "文件块对齐:",IDC_STATIC,9,93,59,8
+    LTEXT           "标志字:",IDC_STATIC,9,106,59,8
+    LTEXT           "子系统:",IDC_STATIC,127,15,63,8
+    LTEXT           "区段数目:",IDC_STATIC,127,28,63,8
+    LTEXT           "日期时间标志:",IDC_STATIC,127,41,63,8
+    LTEXT           "校验和:",IDC_STATIC,127,80,63,8
+    LTEXT           "特征值:",IDC_STATIC,127,67,63,8
+    LTEXT           "首部大小:",IDC_STATIC,127,54,63,8
+    LTEXT           "可选头大小:",IDC_STATIC,127,93,63,8
+    LTEXT           "RVA数及大小:",IDC_STATIC,127,106,63,8
+    GROUPBOX        "查看选项",IDC_STATIC,273,1,60,119
+    PUSHBUTTON      "eXe",IDC_BTN_OPENFILE,244,104,22,12
+END
+
+IDD_DLG_ABOUT DIALOGEX 0, 0, 228, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "关于程序",IDC_STATIC,2,1,225,37
+    GROUPBOX        "关于作者",IDC_STATIC,2,39,225,33
+    LTEXT           "博客",IDC_STATIC,8,49,20,8
+    LTEXT           "邮箱",IDC_STATIC,8,60,20,8
+    LTEXT           "这是一个简单的PE文件结构分析程序，写这个程序的主要目的是熟悉PE文件结构。程序界面模仿LordPE。\r\n欢迎与作者交流O(∩_∩)O~",IDC_STATIC,8,11,214,24
+    LTEXT           "http://www.programlife.net/",IDC_STATIC_BLOG,30,49,98,8,SS_NOTIFY
+    LTEXT           "mailto:stackexploit@gmail.com",IDC_STATIC_MAIL,30,60,98,8,SS_NOTIFY
+END
+
+IDD_DLG_TIME DIALOGEX 0, 0, 243, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "时间日期标志转换器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RADIO_SETMASK,"Button",BS_AUTORADIOBUTTON,10,11,11,10
+    EDITTEXT        IDC_EDIT_DLGTIME_MASK,86,11,102,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO_SETTIME,"Button",BS_AUTORADIOBUTTON,10,34,11,10
+    EDITTEXT        IDC_EDIT_DLGTIME_TIME,34,36,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DLGTIME_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,86,36,102,12
+    PUSHBUTTON      "复制并关闭",IDC_BTN_COPYANDCLOSE,196,10,44,13
+    GROUPBOX        "编码",IDC_STATIC,27,2,167,25
+    GROUPBOX        "解码",IDC_STATIC,27,27,167,25
+    LTEXT           "时间日期标志",IDC_STATIC,34,13,48,8
+END
+
+IDD_DLG_ADDRESS DIALOGEX 0, 0, 212, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RVA及偏移地址转换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "VA       (内存地址)",IDC_RADIO_VA,"Button",BS_AUTORADIOBUTTON,8,11,87,10
+    EDITTEXT        IDC_EDIT_RVADLG_VA,111,12,40,12,ES_AUTOHSCROLL
+    CONTROL         "RVA    (相对虚拟地址)",IDC_RADIO_RVA,"Button",BS_AUTORADIOBUTTON,8,24,87,10
+    EDITTEXT        IDC_EDIT_RVADLG_RVA,111,25,40,12,ES_AUTOHSCROLL
+    CONTROL         "Offset (物理偏移地址)",IDC_RADIO_OFFSET,"Button",BS_AUTORADIOBUTTON,8,37,87,10
+    EDITTEXT        IDC_EDIT_RVADLG_OFFSET,111,38,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RVADLG_SECTION,45,65,106,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "执行转换",IDC_BTN_RVADLG_TRANS,159,6,50,14
+    PUSHBUTTON      "关闭",IDC_BTN_RVADLG_CLOSE,159,63,50,14
+    GROUPBOX        "地址",IDC_STATIC,4,1,153,52
+    GROUPBOX        "附加信息",IDC_STATIC,4,56,153,24
+    LTEXT           "所在区段",IDC_STATIC,9,67,33,8
+END
+
+IDD_DLG_SECTION DIALOGEX 0, 0, 316, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "区段表"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_SECTION,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,315,78
+END
+
+IDD_DLG_IAT DIALOGEX 0, 0, 387, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入表查看器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_IAT_CALL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,59,387,91
+    CONTROL         "",IDC_LIST_IAT_DLL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,387,59
+END
+
+IDD_DLG_TASKMGR DIALOGEX 0, 0, 376, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "任务管理器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_TASKMGR_PROCESS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,375,82
+    CONTROL         "",IDC_LIST_TASKMGR_MODULE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,81,375,88
+END
+
+IDD_DLG_EXPORT DIALOGEX 0, 0, 402, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输出表查看器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_EATDLG_EATOFFSET,54,12,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_CHARACTER,152,12,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_BASE,248,12,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_NAME,344,12,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_DLLNAME,54,27,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_FUNNUM,152,27,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_FUNNAMENUM,248,27,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_FUNADDR,344,27,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_FUNNAMEADDR,62,41,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EATDLG_ORDERADDR,248,41,90,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_EAT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,59,396,121
+    GROUPBOX        "输出信息",IDC_STATIC,4,1,396,56
+    LTEXT           "输出表偏移",IDC_STATIC,10,14,40,8
+    LTEXT           "特征值",IDC_STATIC,108,14,34,8
+    LTEXT           "基址",IDC_STATIC,205,14,34,8
+    LTEXT           "名称",IDC_STATIC,303,14,34,8
+    LTEXT           "函数数量",IDC_STATIC,108,28,34,8
+    LTEXT           "函数名数量",IDC_STATIC,205,28,41,8
+    LTEXT           "函数地址",IDC_STATIC,303,28,34,8
+    LTEXT           "函数名序号地址",IDC_STATIC,190,43,56,8
+    LTEXT           "名称字串",IDC_STATIC,10,28,34,8
+    LTEXT           "函数名称地址",IDC_STATIC,10,43,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_MAIN, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+    END
+
+    IDD_DLG_TIME, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "LordPE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "一个简单的PE文件分析器"
+            VALUE "CompanyName", "代码疯子作品"
+            VALUE "FileDescription", "PEViewer"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "LordPE"
+            VALUE "LegalCopyright", "Copyright (C) 2011"
+            VALUE "LegalTrademarks", "http://www.programlife.net/"
+            VALUE "OriginalFilename", "LordPE.exe"
+            VALUE "ProductName", "PEViewer - 一个简单的PE文件分析器"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
